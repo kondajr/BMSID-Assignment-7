@@ -71,6 +71,3 @@ A 3D ball-and-stick model of the molecule will also be displayed, visualizing th
 - `main.py`: Main Python file containing functions for vector calculations, reading input, and generating visual output.
 - `input_data.txt`: Input file for atom coordinates and molecular geometry parameters.
 - `README.md`: Description of the project, usage instructions, and example input/output.
-
-## License
-This project is licensed under the MIT license - see the [LICENSE](LICENSE) file for details.
