@@ -1,0 +1,6 @@
+A: 0 0 0
+B: 1 0 0
+C: 0 1 0
+bond_length: 1
+bond_angle: 45
+torsion_angle: 90
