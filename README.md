@@ -32,36 +32,36 @@ bond_angle: <bond_angle_in_degrees>
 torsion_angle: <torsion_angle_in_degrees>
 ```
 
-### Example Input (`input_data.txt`)
+### Input Parameters (`input_data.txt`)
 ```plaintext
-A: 0 0 0
-B: 1 0 0
-C: 0 1 0
-bond_length: 1
-bond_angle: 45
-torsion_angle: 90
+A: -42.915 -6.096 -15.152
+B: -43.157 -6.618 -13.825
+C: -42.633 -5.773 -12.665
+bond_length: 1.3
+bond_angle: 118.1
+torsion_angle: -12.8
 ```
 
-![Example Image](images/input_data.png)
+![Input Image](images/input_data.png)
 
 ### Running the Program
 To execute the code, run the following command:
 ```bash
-python3 main.py
+python3 main.py -i input_data.txt
 ```
 
 The program will:
 1. Read the coordinates and parameters from `input_data.txt`.
 2. Calculate the coordinates of Atom D.
-3. Display the coordinates of Atom D in the console.
+3. Display the coordinates of Atom D in `output.txt`.
 4. Generate a 3D visualization of the molecule with atoms A, B, C, and D connected by bonds.
 
-### Output Example
-After execution, the coordinates of Atom D will be printed to the console as:
+### Output
+After execution, the coordinates of Atom D will be printed to the file `output.txt` as:
 ```plaintext
-The coordinates of atom D: [0.5 0.5 0.70710678]
+The coordinates of atom D: -41.805922, -4.807241, -12.935650
 ```
-![Example Image](images/terminal.png)
+![Output Image](images/output.png)
 
 A 3D ball-and-stick model of the molecule will also be displayed, visualizing the calculated structure.
 
@@ -70,4 +70,5 @@ A 3D ball-and-stick model of the molecule will also be displayed, visualizing th
 ## Files
 - `main.py`: Main Python file containing functions for vector calculations, reading input, and generating visual output.
 - `input_data.txt`: Input file for atom coordinates and molecular geometry parameters.
+- `output.txt`: Output file for atom coordinates of atom D.
 - `README.md`: Description of the project, usage instructions, and example input/output.

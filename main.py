@@ -58,7 +58,9 @@ def calculate_atom_D(filename):
     A, B, C, bond_length, bond_angle, torsion_angle = load_inputs_from_file(filename)
     D = find_atom_D_fixed(A, B, C, bond_length, bond_angle, torsion_angle)
 
-    print("The coordinates of atom D:", D)
+    output_filename = "output.txt"
+    with open(output_filename, 'w') as f:
+        f.write("The coordinates of atom D: {:.6f}, {:.6f}, {:.6f}\n".format(*D))
     
     return A, B, C, D
 
